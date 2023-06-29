@@ -32,6 +32,35 @@
       ]
     },
     {
+      "id": "default_editor",
+      "type": "select",
+      "name": "Default Editor",
+      "description": "Set which editor to be used to open the files or folder with",
+      "default_value": "gvim",
+      "options": [
+        {
+          "text": "vim",
+          "value": "vim"
+        },
+        {
+          "text": "vi",
+          "value": "vi"
+        },
+        {
+          "text": "neo-vim",
+          "value": "nvim"
+        },
+        {
+          "text": "nano",
+          "value": "nano"
+        },
+        {
+          "text": "gvim",
+          "value": "gvim"
+        }
+      ]
+    },
+    {
       "id": "search_type",
       "type": "select",
       "name": "Search type",
