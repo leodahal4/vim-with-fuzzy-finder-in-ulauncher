@@ -215,12 +215,11 @@ class KeywordQueryEventListener(EventListener):
         return RenderResultListAction(items)
 
 class ItemEnterEventListener(EventListener):
-
     def on_event(self, event, extension):
         data = event.get_data()
         logger.info(data)
         if data:
-            subprocess.Popen('gvim "%s"' % data, shell=True)
+            subprocess.Popen(preferences["default_editor"] + " %s" % data, shell=True)
 
 
 if __name__ == "__main__":
